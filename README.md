@@ -2,37 +2,37 @@
 
 ## Specification
 
-Hi and welcome to team Gilded Rose. As you know, we are a small inn with a prime location in a
-prominent city ran by a friendly innkeeper named Allison. We also buy and sell only the finest goods.
-Unfortunately, our goods are constantly degrading in quality as they approach their sell by date. We
-have a system in place that updates our inventory for us. It was developed by a no-nonsense type named
-Leeroy, who has moved on to new adventures. Your task is to add the new feature to our system so that
-we can begin selling a new category of items. First an introduction to our system:
+Bonjour et bienvenue dans l'équipe Gilded Rose. Comme vous le savez, nous sommes une petite auberge bénéficiant d'un emplacement de choix dans une ville importante, dirigée par une sympathique aubergiste nommée Allison.
+ville importante, dirigée par une aubergiste sympathique du nom d'Allison. Nous n'achetons et ne vendons que les produits les plus raffinés.
+Malheureusement, la qualité de nos produits ne cesse de se dégrader à mesure qu'ils approchent de leur date de péremption. Nous avons mis en place un système de mise à jour de nos produits.
+avons mis en place un système qui met à jour notre inventaire à notre place. Il a été mis au point par un type sans état d'âme du nom de
+Leeroy, qui est parti vers de nouvelles aventures. Votre tâche consiste à ajouter la nouvelle fonctionnalité à notre système afin que nous puissions commencer à vendre une nouvelle catégorie de produits.
+pour que nous puissions commencer à vendre une nouvelle catégorie d'articles. Tout d'abord, une introduction à notre système :
 
-    - All items have a SellIn value which denotes the number of days we have to sell the item
-    - All items have a Quality value which denotes how valuable the item is
-    - At the end of each day our system lowers both values for every item
+    - Tous les articles ont une valeur SellIn qui indique le nombre de jours dont nous disposons pour vendre l'article.
+    - Tous les objets ont une valeur de qualité qui indique la valeur de l'objet.
+    - À la fin de chaque journée, notre système réduit les deux valeurs pour chaque objet.
 
-Pretty simple, right? Well this is where it gets interesting:
+C'est assez simple, n'est-ce pas ? C'est là que les choses deviennent intéressantes :
 
-    - Once the sell by date has passed, Quality degrades twice as fast
-    - The Quality of an item is never negative
-    - "Aged Brie" actually increases in Quality the older it gets
-    - The Quality of an item is never more than 50
-    - "Sulfuras", being a legendary item, never has to be sold or decreases in Quality
-    - "Backstage passes", like aged brie, increases in Quality as its SellIn value approaches;
-    Quality increases by 2 when there are 10 days or less and by 3 when there are 5 days or less but
-    Quality drops to 0 after the concert
+    - Une fois la date de péremption dépassée, la qualité se dégrade deux fois plus vite.
+    - La qualité d'un produit n'est jamais négative
+    - Le "Brie vieilli" gagne en qualité au fur et à mesure qu'il vieillit.
+    - La qualité d'un produit n'est jamais supérieure à 50
+    - Le "Sulfuras", étant un objet légendaire, n'a jamais besoin d'être vendu et sa qualité ne diminue jamais.
+    - Les "Passes pour les coulisses", comme le brie vieilli, augmentent leur qualité au fur et à mesure que leur valeur de vente approche ;
+    La qualité augmente de 2 lorsqu'il y a 10 jours ou moins et de 3 lorsqu'il y a 5 jours ou moins mais
+    La qualité tombe à 0 après le concert
 
-We have recently signed a supplier of conjured items. This requires an update to our system:
+Nous avons récemment signé un contrat avec un fournisseur d'articles de prestidigitation. Cela nécessite une mise à jour de notre système :
 
-    - "Conjured" items degrade in Quality twice as fast as normal items
+    - Les objets "conjurés" se dégradent en qualité deux fois plus vite que les objets normaux.
 
-Feel free to make any changes to the UpdateQuality method and add any new code as long as everything
-still works correctly. However, do not alter the Item class or Items property as those belong to the
-goblin in the corner who will insta-rage and one-shot you as he doesn't believe in shared code
-ownership (you can make the UpdateQuality method and Items property static if you like, we'll cover
-for you).
+N'hésitez pas à modifier la méthode UpdateQuality et à ajouter du code tant que tout fonctionne correctement.
+fonctionne correctement. Cependant, ne modifiez pas la classe Item ou la propriété Items, car elles appartiennent au gobelin du coin qui se chargera de les modifier.
+gobelin dans le coin qui va se mettre en colère et vous tirer dessus car il ne croit pas à la propriété partagée du code.
+(vous pouvez rendre la méthode UpdateQuality et la propriété Items statiques si vous le souhaitez, nous nous en chargerons).
+pour vous.
 
-Just for clarification, an item can never have its Quality increase above 50, however "Sulfuras" is a
-legendary item and as such its Quality is 80 and it never alters.
+Pour clarifier les choses, un objet ne peut jamais voir sa qualité augmenter au-delà de 50, mais "Sulfuras" est un objet légendaire et, en tant que tel, sa qualité est supérieure à 50.
+Sulfuras" est un objet légendaire et, en tant que tel, sa qualité est de 80 et ne change jamais.
