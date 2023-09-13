@@ -17,6 +17,7 @@ export class GildedRose {
     this.items = items;
   }
 
+<<<<<<< Updated upstream
   updateQuality() {
     for (let i = 0; i < this.items.length; i++) {
       if (this.items[i].name != "Aged Brie" && this.items[i].name != "Backstage passes to a TAFKAL80ETC concert") {
@@ -62,8 +63,59 @@ export class GildedRose {
           }
         }
       }
+=======
+  private updateAgedBrie(item) {
+    if (item.quality < 50) {
+      item.quality++;
+>>>>>>> Stashed changes
     }
 
+<<<<<<< Updated upstream
     return this.items;
   }
 }
+=======
+  private updateBackstage(item) {
+    if (item.quality < 50) {
+      item.quality++;
+      if (item.sellIn < 11 && item.quality < 50) {
+        item.quality++;
+      }
+      if (item.sellIn < 6 && item.quality < 50) {
+        item.quality++;
+      }
+    }
+    if (item.sellIn < 0) {
+      item.quality = 0;
+    }
+  }
+
+  private update(item) {
+    if (item.name !== "Sulfuras, Hand of Ragnaros") {
+      if (item.quality > 0) {
+        item.quality--;
+      }
+      if (item.sellIn < 0 && item.quality > 0) {
+        item.quality--;
+      }
+    }
+  }
+
+  updateQuality() {
+    this.items.forEach(item => {
+      switch (item.name) {
+        case "Aged Brie":
+          this.updateAgedBrie(item);
+          break;
+        case "Backstage passes to a TAFKAL80ETC concert":
+          this.updateBackstage(item);
+          break;
+        default:
+          this.update(item);
+      }
+    })
+    return this.items;
+  }
+
+}
+>>>>>>> Stashed changes
