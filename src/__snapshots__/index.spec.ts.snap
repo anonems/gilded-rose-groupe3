@@ -1,0 +1,131 @@
+// Snapshot pour "Conjured item"
+exports[`Gilded Rose should match snapshot for Conjured item 1`] = `
+[
+  "My item is : Conjured and his sellIn is : 1 and his quality is : 8",
+  "Conjured",
+  "My item is not Aged Brie or Backstage passes to a TAFKAL80ETC concert",
+  "My item quality is greater than 0",
+  "My item is not Sulfuras, Hand of Ragnaros and loose 1 quality",
+  "My item quality is : 7",
+  "My item is not Sulfuras, Hand of Ragnaros and loose 1 sellIn",
+  "My item sellIn is : 0",
+  "My items",
+]
+`;
+
+// Snapshot pour "Aged Brie with sellIn = 0"
+exports[`Gilded Rose should match snapshot for Aged Brie with sellIn = 0 1`] = `
+[
+  "My item is : Aged Brie and his sellIn is : -1 and his quality is : 11",
+  "Aged Brie",
+  "My item is Aged Brie or Backstage passes to a TAFKAL80ETC concert",
+  "My item quality is less than 50 and gain 1 quality",
+  "My item quality is : 12",
+  "My item is not Sulfuras, Hand of Ragnaros and loose 1 sellIn",
+  "My item sellIn is : -2",
+  "My item sellIn is less than 0",
+  "My item is Aged Brie",
+  "My item quality is less than 50 and gain 1 quality",
+  "My item quality is : 13",
+  "My items",
+]
+`;
+
+// Snapshot pour "Backstage passes with sellIn = 0"
+exports[`Gilded Rose should match snapshot for Backstage passes with sellIn = 0 1`] = `
+[
+  "My item is : Backstage passes to a TAFKAL80ETC concert and his sellIn is : -1 and his quality is : 0",
+  "Backstage passes to a TAFKAL80ETC concert",
+  "My item is Aged Brie or Backstage passes to a TAFKAL80ETC concert",
+  "My item quality is less than 50 and gain 1 quality",
+  "My item quality is : 1",
+  "My item is Backstage passes to a TAFKAL80ETC concert",
+  "My item is Backstage passes to a TAFKAL80ETC concert and his sellIn is less than 11",
+  "My item quality is less than 50 and gain 1 quality",
+  "My item quality is : 2",
+  "My item is Backstage passes to a TAFKAL80ETC concert and his sellIn is less than 6 : -1",
+  "My item quality is less than 50 and gain 1 quality",
+  "My item quality is : 3",
+  "My item is not Sulfuras, Hand of Ragnaros and loose 1 sellIn",
+  "My item sellIn is : -2",
+  "My item sellIn is less than 0",
+  "My item is not Aged Brie",
+  "My item is Backstage passes to a TAFKAL80ETC concert and his quality is reduced to 0",
+  "My item quality is : 0",
+  "My items",
+]
+`;
+
+// Snapshot pour "Sulfuras with sellIn = 0"
+exports[`Gilded Rose should match snapshot for Sulfuras with sellIn = 0 1`] = `
+[
+  "My item is : Sulfuras, Hand of Ragnaros and his sellIn is : 0 and his quality is : 80",
+  "Sulfuras, Hand of Ragnaros",
+  "My item is not Aged Brie or Backstage passes to a TAFKAL80ETC concert",
+  "My item quality is greater than 0",
+  "My items",
+]
+`;
+
+// Snapshot pour "empty items array"
+exports[`Gilded Rose should match snapshot for empty items array 1`] = `
+[
+  "My items",
+]
+`;
+
+// Snapshot pour "normal item with sellIn > 0 and quality > 0"
+exports[`Gilded Rose should match snapshot for normal item with sellIn > 0 and quality > 0 1`] = `
+[
+  "My item is : Normal Item and his sellIn is : 4 and his quality is : 9",
+  "Normal Item",
+  "My item is not Aged Brie or Backstage passes to a TAFKAL80ETC concert",
+  "My item quality is greater than 0",
+  "My item is not Sulfuras, Hand of Ragnaros and loose 1 quality",
+  "My item quality is : 8",
+  "My item is not Sulfuras, Hand of Ragnaros and loose 1 sellIn",
+  "My item sellIn is : 3",
+  "My items",
+]
+`;
+
+// Snapshot pour "normal item with sellIn = 0 and quality > 0"
+exports[`Gilded Rose should match snapshot for normal item with sellIn = 0 and quality > 0 1`] = `
+[
+  "My item is : Normal Item and his sellIn is : -1 and his quality is : 9",
+  "Normal Item",
+  "My item is not Aged Brie or Backstage passes to a TAFKAL80ETC concert",
+  "My item quality is greater than 0",
+  "My item is not Sulfuras, Hand of Ragnaros and loose 1 quality",
+  "My item quality is : 8",
+  "My item is not Sulfuras, Hand of Ragnaros and loose 1 sellIn",
+  "My item sellIn is : -2",
+  "My items",
+]
+`;
+
+// Snapshot pour "normal item with sellIn > 0 and quality = 0"
+exports[`Gilded Rose should match snapshot for normal item with sellIn > 0 and quality = 0 1`] = `
+[
+  "My item is : Normal Item and his sellIn is : 4 and his quality is : 0",
+  "Normal Item",
+  "My item is not Aged Brie or Backstage passes to a TAFKAL80ETC concert",
+  "My item quality is not greater than 0",
+  "My item is not Sulfuras, Hand of Ragnaros and loose 1 sellIn",
+  "My item sellIn is : 3",
+  "My items",
+]
+`;
+
+// Snapshot pour "normal item with sellIn = 0 and quality = 0"
+exports[`Gilded Rose should match snapshot for normal item with sellIn = 0 and quality = 0 1`] = `
+[
+  "My item is : Normal Item and his sellIn is : -1 and his quality is : 0",
+  "Normal Item",
+  "My item is not Aged Brie or Backstage passes to a TAFKAL80ETC concert",
+  "My item quality is not greater than 0",
+  "My item is not Sulfuras, Hand of Ragnaros and loose 1 sellIn",
+  "My item sellIn is : -2",
+  "My items",
+]
+`;
