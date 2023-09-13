@@ -1,4 +1,4 @@
-import { GildedRose, Item } from '../src/updated'; // Assurez-vous que l'importation de vos classes est correcte.
+import { GildedRose, Item } from '../src/updated'; // ../src/updated (old file: index.ts
 
 describe('Gilded Rose', () => {
   it('should match snapshot for Conjured item', () => {
